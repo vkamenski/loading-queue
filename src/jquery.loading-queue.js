@@ -46,7 +46,7 @@
 		return def.promise();
 	};
 		
-	$.fn[pluginName] = function (options) {
+	$.fn[pluginName] = function () {
 		
 		var def = enqueue($(this));
 		
