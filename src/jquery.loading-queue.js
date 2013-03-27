@@ -14,6 +14,12 @@
 			
 			loading = true;
 			
+			if(!item.image.is('img')) {
+				item.def.reject(item.image);
+				dequeue();
+				return;
+			}
+			
 			var src = item.image.data('src');
 			
 			item.image
